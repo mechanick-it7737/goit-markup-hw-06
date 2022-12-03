@@ -512,18 +512,23 @@
             </li>
           </ul>
           <div class="modal-chekbox-wrap">
-            <svg class="modal-chekbox" width="16" height="15">
+            <label class="checkbox" for="check">
+              <span class="checkbox-text">
+                Погоджуюся з розсилкою та приймаю
+                <a class="checkbox-link" href="#">Умови договору</a></span
+              ></label
+            >
+            <input
+              class="checkbox-input visually-hidden"
+              type="checkbox"
+              name="checkbox"
+              id="check"
+            />
+            <svg class="chekbox-icon" width="16" height="15">
               <use href="./images/sprite.svg#iconicon-check"></use>
             </svg>
-            <label for="checkbox">
-              <input class="visually-hidden" type="checkbox" name="checkbox" />
-              <span class="checkbox-text">
-                Погоджуюся з розсилкою та приймаю</span
-              >
-              <a class="checkbox-link" href="#">Умови договору</a>
-            </label>
+            <span class="checkbox-box"></span>
           </div>
-
           <button class="modal-submit-button" type="submit">Відправити</button>
         </form>
       </div>
